@@ -1,3 +1,3 @@
 # hello-world
 
-Learning GitHub
+Learning GitHub and the terminal.
