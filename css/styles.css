@@ -24,7 +24,10 @@ a:hover {
    margin-bottom: 20px;
 }
 
-/* Custom default button */
+.btn {
+   border-radius: 3px;
+   -webkit-transition: 0.3s;
+}
 .btn-default,
 .btn-default:hover,
 .btn-default:focus {
@@ -125,11 +128,19 @@ a:hover {
 
 
 
-/* Call to Action Section */
+
+/*======================*
+ * js Practice Sections *
+ *======================*/
+
+
+/* s1 - Responsive Panels */
 .section-cta {
    background-color: #fff;
 }
-
+.section-cta .btn {
+   margin-top: 30px;
+}
 .panel {
    border: 1px solid #ccc;
    border-radius: 3px;
@@ -155,11 +166,8 @@ a:hover {
 
 
 
-/*======================*
- * js Practice Sections *
- *======================*/
 
- /* s1 - Checklist */
+ /* s2 - Checklist */
  .section-checklist {
     background-color: #eee;
 }
