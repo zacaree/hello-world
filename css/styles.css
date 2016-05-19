@@ -17,6 +17,12 @@ a:focus,
 a:hover {
    color: #fff;
 }
+.section a {
+   color: #555;
+}
+.section h2 {
+   margin-bottom: 20px;
+}
 
 /* Custom default button */
 .btn-default,
@@ -153,42 +159,67 @@ a:hover {
  * js Practice Sections *
  *======================*/
 
-/* s1 */
-.section-practice {
-   background-color: #eee;
+ /* s1 - Checklist */
+ .section-checklist {
+    background-color: #eee;
 }
-.done {
-   color: #bbb;
-   text-decoration: line-through;
-}
+ .section-checklist input {
+    display: none;
+ }
+ .section-checklist li.edit span {
+    display: none;
+ }
+ .section-checklist li.edit input {
+    display: initial;
+ }
 
 
-/* s2 */
-.section-form {
+
+
+/* s2 - Calculator*/
+.section-calculator {
    background-color: #fff;
 }
-.section-form input {
+.section-calculator input {
    background: #eee;
 	border: none;
 	border-left: 2px solid #eee;
 	font-size: 1.5rem;
-   margin: 2% 2% 0 2%;
+   margin: 1% 2% 0 2%;
    padding: 20px;
 	width: 40%;
 
 	transition: background 0.5s, border-left 0.5s;
 }
-.section-form input:focus {
+.section-calculator input:focus {
    background: white;
 	border-left: 2px solid #00f28f;
 	box-shadow: none;
 	outline: none;
 }
-.section-form p {
+.section-calculator p {
    position: relative;
    left: -2%;
 }
 #add-sum {
    margin: 2% 2% 0 2%;
    font-size: 2rem;
+}
+
+
+
+
+/* s3 - Pictures */
+.section-jsPics {
+   background-color: #eee;
+}
+.section-jsPics img {
+   background-color: #fff;
+   box-shadow: 0 8px 10px -4px rgba(0, 0, 0, 0.3);
+   margin: 5% 0;
+   padding: 10px;
+   width: 100%;
+}
+.hide {
+   display: none;
 }

@@ -119,33 +119,39 @@
             </div>
          </div>
 
-         <div class="section section-practice">
+         <div class="section section-checklist">
             <div class="container">
                <div class="row">
                   <div class="col-xs-12">
-                     <p>Here's a paragraph.</p>
-                     <p>Here's another paragraph.</p>
-                     <h3>Toppings List</h3>
+                     <h2>Editable List</h2>
                      <ul id="checklist">
-                        <li>Pepperoni</li>
-                        <li class="done">Sausage</li>
-                        <li>Peppers</li>
-                        <li>Mushrooms</li>
+                        <li>
+                           <span>Pepperoni</span>
+                           <input value="Pepperoni">
+                        </li>
+                        <li>
+                           <span>Sausage</span>
+                           <input value="Sausage">
+                        </li>
+                        <li>
+                           <span>Onion</span>
+                           <input value="Onion">
+                        </li>
                      </ul>
                   </div>
                </div>
             </div>
          </div>
 
-         <div class="section section-form">
+         <div class="section section-calculator">
             <div class="container">
                <div class="row">
                   <div class="col-xs-12">
-                     <h3>Add Numbers</h3>
+                     <h2>Calculator</h2>
                   </div>
                   <div class="col-xs-12">
                      <p>
-                        <input id="num-one"> + <input id="num-two">
+                        <input id="num-one" placeholder="Enter Value"> + <input id="num-two" placeholder="Enter Value">
                      </p>
                   </div>
                   <div class="col-xs-12">
@@ -154,6 +160,32 @@
                </div>
             </div>
          </div>
+
+         <div class="section section-jsPics">
+            <div class="container">
+               <div class="row">
+                  <div class="col-xs-12">
+                     <h2>Pictures</h2>
+                     <ul>
+                        <li><a data-img="pic1img" id="pic1a" href="#" onclick="return false;">Photo 1</a></li>
+                        <li><a data-img="pic2img" id="pic2a" href="#" onclick="return false;">Photo 2</a></li>
+                        <li><a data-img="pic3img" id="pic3a" href="#" onclick="return false;">Photo 3</a></li>
+                     </ul>
+                  </div>
+                  <div class="col-xs-12 col-sm-4">
+                     <img class="hide" id="pic1img" src="https://images.unsplash.com/photo-1460500063983-994d4c27756c?format=auto&auto=compress&dpr=1&crop=entropy&fit=crop&w=376&h=251&q=80" alt="coastline" />
+                  </div>
+                  <div class="col-xs-12 col-sm-4">
+                     <img class="hide" id="pic2img" src="https://images.unsplash.com/photo-1448518184296-a22facb4446f?format=auto&auto=compress&dpr=1&crop=entropy&fit=crop&w=376&h=251&q=80" alt="girl on canoe" />
+                  </div>
+                  <div class="col-xs-12 col-sm-4">
+                     <img class="hide" id="pic3img" src="https://images.unsplash.com/photo-1459664018906-085c36f472af?format=auto&auto=compress&dpr=1&crop=entropy&fit=crop&w=376&h=251&q=80" alt="plant macro shot" />
+                  </div>
+               </div>
+            </div>
+         </div>
+
+
 
       </div>
 
