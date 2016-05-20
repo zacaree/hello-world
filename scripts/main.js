@@ -6,7 +6,7 @@ $(document).ready(function() {
     $(this).siblings().removeClass('active');
 
     var panelToShow = $(this).attr('data-tab');
-    alert(panelToShow);
+    console.log(panelToShow);
   });
 
 });
