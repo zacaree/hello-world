@@ -184,7 +184,7 @@ a:hover {
 
 
 
-/* s2 - Calculator*/
+/* s3 - Calculator*/
 .section-calculator {
    background-color: #fff;
 }
@@ -217,7 +217,7 @@ a:hover {
 
 
 
-/* s3 - Pictures */
+/* s4 - Pictures */
 .section-jsPics {
    background-color: #eee;
 }
@@ -230,4 +230,39 @@ a:hover {
 }
 .hide {
    display: none;
+}
+.blue {
+   color: blue;
+}
+
+
+
+
+/* S5 - Tabs */
+.section-tabs ul {
+   margin: 0;
+   -webkit-padding-start: 0;
+}
+.section-tabs li {
+   display: inline-block;
+
+   background-color: #ddd;
+   border-left: 2px solid #ddd;
+   border-right: 2px solid #ddd;
+   margin-right: -4px;
+   padding: 0.5% 4.2%;
+}
+.section-tabs li.active {
+   background-color: #eee;
+   border-left: 2px solid #00f28f;
+   border-right: 2px solid #eee;
+}
+.section-tabs .pan {
+   display: none;
+
+   background-color: #eee;
+   padding: 3%;
+}
+.section-tabs .pan.active {
+   display: block;
 }

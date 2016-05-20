@@ -1,4 +1,34 @@
 
+$(document).ready(function() {
+
+  $('.section-tabs .tabs li').on('click', function() {
+    $(this).addClass('active');
+    $(this).siblings().removeClass('active');
+
+    var panelToShow = $(this).attr('data-tab');
+    alert(panelToShow);
+  });
+
+});
+
+
+
+
+
+
+// $(document).ready(function() {
+//
+//   $('ul').on('click', function() {
+//     $(this).find('li').filter(':first').toggleClass('blue');
+//   })
+//
+// });
+
+
+
+
+
+
 // Panels
 $(document).ready(function() {
 
