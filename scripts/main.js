@@ -1,29 +1,27 @@
 
+// jQuery Tabbed Panel
 $(document).ready(function() {
 
   $('.section-tabs .tabs li').on('click', function() {
     $(this).addClass('active');
     $(this).siblings().removeClass('active');
 
+    // Figure out which panel to show
     var panelToShow = $(this).attr('data-tab');
-    console.log(panelToShow);
+
+    // Hide current panel
+    $('.section-tabs .pan.active').fadeOut(100, showNextPanel);
+
+    // Show next panel
+    function showNextPanel() {
+      $(this).removeClass('active');
+
+      $('#'+panelToShow).fadeIn(100, function() {
+        $(this).addClass('active');
+      });
+    }
   });
-
 });
-
-
-
-
-
-
-// $(document).ready(function() {
-//
-//   $('ul').on('click', function() {
-//     $(this).find('li').filter(':first').toggleClass('blue');
-//   })
-//
-// });
-
 
 
 

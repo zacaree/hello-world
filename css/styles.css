@@ -54,6 +54,10 @@ a:hover {
    text-shadow: none;
 }
 
+.bg-lt-gray {
+   background-color: #eee;
+}
+
 /*=============*
  * End Globals *
  *=============*/
@@ -136,7 +140,6 @@ a:hover {
 
 /* s1 - Responsive Panels */
 .section-cta {
-   background-color: #fff;
 }
 .section-cta .btn {
    margin-top: 30px;
@@ -169,7 +172,6 @@ a:hover {
 
  /* s2 - Checklist */
  .section-checklist {
-    background-color: #eee;
 }
  .section-checklist input {
     display: none;
@@ -186,7 +188,6 @@ a:hover {
 
 /* s3 - Calculator*/
 .section-calculator {
-   background-color: #fff;
 }
 .section-calculator input {
    background: #eee;
@@ -219,7 +220,6 @@ a:hover {
 
 /* s4 - Pictures */
 .section-jsPics {
-   background-color: #eee;
 }
 .section-jsPics img {
    background-color: #fff;
@@ -238,7 +238,7 @@ a:hover {
 
 
 
-/* S5 - Tabs */
+/* S5 - jQuery Tabbed Panel */
 .section-tabs ul {
    margin: 0;
    -webkit-padding-start: 0;
