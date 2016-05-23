@@ -1,3 +1,3 @@
 # hello-world
 
-Learning GitHub, the terminal, and JavaScript.
+Learning GitHub, the terminal, HTML, CSS, and JavaScript/jQuery.
