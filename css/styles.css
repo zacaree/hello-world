@@ -238,7 +238,7 @@ a:hover {
 
 
 
-/* S5 - jQuery Tabbed Panel */
+/* s5 - jQuery Tabbed Panel */
 .section-tabs ul {
    margin: 0;
    -webkit-padding-start: 0;
@@ -265,4 +265,27 @@ a:hover {
 }
 .section-tabs .pan.active {
    display: block;
+}
+
+
+
+
+/* s6 - Basic jQuery slider */
+#slider {
+   max-width: 1140px;
+   height: 100%;
+   overflow: hidden;
+}
+#slider .slides {
+   display: block;
+   height: 800px;
+   width: 4800px;
+   margin: 0;
+   padding: 0;
+}
+#slider .slide {
+   float: left;
+   list-style-type: none;
+   height: 100%;
+   width: 1140px;
 }
