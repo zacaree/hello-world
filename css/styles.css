@@ -306,7 +306,7 @@ input:focus {
 .section-ajax li {
    background-color: #eee;
    margin-bottom: 6px;
-   padding: 10px 20px;
+   padding: 12px 0 4px 20px;
    border: 1px solid #ddd;
    border-radius: 3px;
 
@@ -316,9 +316,9 @@ input:focus {
    margin: 0;
    float: right;
    position: relative;
-   top: -11px;
-   right: -20px;
-   padding: 10px 17px;
+   top: -73px;
+   right: -1;
+   padding: 28px 20px;
    border-radius: 0 3px 3px 0;
 }
 .section-ajax input {

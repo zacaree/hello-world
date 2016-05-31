@@ -291,22 +291,28 @@
                      <h3>Coffee Orders</h3>
                      <ul id="orders"></ul>
 
+                     <!-- Template connected to jQuery -->
+                     <template id="order-template">
+                        <li>
+                           <p>Name: <strong>{{name}}</strong></p>
+                           <p>Drink: <strong>{{drink}}</strong></p>
+                           <button data-id='{{id}}' class="btn btn-danger remove">x</button>
+                         </li>
+                     </template>
+
                      <h4>Add a coffee order</h4>
                   </div>
                </div>
-
                <div class="row">
                   <div class="col-xs-12 col-sm-4">
                      <input class="input coffee-input" type="text" id="name" placeholder="Name">
                   </div>
                </div>
-
                <div class="row">
                   <div class="col-xs-12 col-sm-4">
                      <input class="input coffee-input" type="text" id="drink" placeholder="Drink">
                   </div>
                </div>
-
                <div class="row">
                   <div class="col-xs-12">
                      <button class="btn btn-success" id="add-order"><span class="glyphicon glyphicon-shopping-cart"></span> Add Order</button>
@@ -330,8 +336,12 @@
 
       <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.3/jquery.min.js"></script>
+
       <!-- Include all compiled plugins (below), or include individual files as needed -->
       <script src="scripts/bootstrap.min.js"></script>
+
+      <!-- Using Mustache for the js templating -->
+      <script src="scripts/mustache.js"></script>
 
       <!-- Playing with Javascript here -->
       <script src="scripts/main.js"></script>

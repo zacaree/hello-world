@@ -1,18 +1,16 @@
 
-// jQuery/Ajax Practice
+
+
 $(document).ready(function() {
 
   var $orders = $('#orders');
   var $name = $('#name');
   var $drink = $('#drink');
 
+  var orderTemplate = $('#order-template').html();
+
   function addOrder(order) {
-    $orders.append('<li> \
-    name: <strong>'+ order.name +'</strong>, \
-    drink: <strong>'+ order.drink +'</strong> \
-    <button data-id="'+ order.id +'" class="btn btn-danger remove">x \
-    </button> \
-    </li>');
+    $orders.append(Mustache.render(orderTemplate, order));
   }
 
   $.ajax({
@@ -50,6 +48,7 @@ $(document).ready(function() {
 
   });
 
+
   $orders.delegate('.remove', 'click', function() {
 
     var $li = $(this).closest('li');
@@ -58,13 +57,90 @@ $(document).ready(function() {
       type: 'DELETE',
       url: 'http://rest.learncode.academy/api/learncode/friendz/' + $(this).attr('data-id'),
       success: function (){
-        $li.remove();
+        $li.fadeOut(300, function() {
+          $(this).remove();
+        });
       }
     });
 
   });
 
 });
+
+
+
+
+
+
+// jQuery/Ajax Practice
+// $(document).ready(function() {
+//
+//   var $orders = $('#orders');
+//   var $name = $('#name');
+//   var $drink = $('#drink');
+//
+//   function addOrder(order) {
+//     $orders.append('<li> \
+//     name: <strong>'+ order.name +'</strong>, \
+//     drink: <strong>'+ order.drink +'</strong> \
+//     <button data-id="'+ order.id +'" class="btn btn-danger remove">x \
+//     </button> \
+//     </li>');
+//   }
+//
+//   $.ajax({
+//     type: 'GET',
+//     url: 'http://rest.learncode.academy/api/learncode/friendz',
+//     success: function(orders) {
+//       $.each(orders, function(i, order) {
+//         addOrder(order);
+//       });
+//     },
+//     error: function() {
+//       alert('Error loading orders.');
+//     }
+//   });
+//
+//   $('#add-order').on('click', function() {
+//
+//     // order is used in ajax data below
+//     var order = {
+//       name: $name.val(),
+//       drink: $drink.val(),
+//     };
+//
+//     $.ajax({
+//       type: 'POST',
+//       url: 'http://rest.learncode.academy/api/learncode/friendz',
+//       data: order,
+//       success: function(newOrder) {
+//         addOrder(newOrder);
+//       },
+//       error: function() {
+//         alert('Error saving order.');
+//       }
+//     });
+//
+//   });
+//
+//
+//   $orders.delegate('.remove', 'click', function() {
+//
+//     var $li = $(this).closest('li');
+//
+//     $.ajax({
+//       type: 'DELETE',
+//       url: 'http://rest.learncode.academy/api/learncode/friendz/' + $(this).attr('data-id'),
+//       success: function (){
+//         $li.fadeOut(300, function() {
+//           $(this).remove();
+//         });
+//       }
+//     });
+//
+//   });
+//
+// });
 
 
 
